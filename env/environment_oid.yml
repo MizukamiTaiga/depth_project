@@ -1,0 +1,21 @@
+name: oid-env
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - matplotlib
+  - pyyaml
+  - pillow
+  - tqdm
+  - lxml
+  - six
+  - awscli
+  - pip
+  - pip:
+      - opencv-python
+      - python3-xlib
+      - urllib3<1.26,>=1.25.4

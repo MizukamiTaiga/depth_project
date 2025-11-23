@@ -1,0 +1,24 @@
+{
+    "landmarks": [
+        {
+            "id": 1,
+            "class": "person",
+            "position": [
+                0.0,
+                0.0,
+                2.0
+            ],
+            "audio_signature": null
+        },
+        {
+            "id": 2,
+            "class": "chair",
+            "position": [
+                1.0,
+                0.0,
+                3.0
+            ],
+            "audio_signature": null
+        }
+    ]
+}

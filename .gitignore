@@ -1,0 +1,57 @@
+# --- Python / Conda / venv ---
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.dist-info/
+
+# venv / conda 系
+venv*/
+.env/
+.env*/
+.venv/
+conda*/
+# ※env/venv310 を置くなら、そのパスも除外
+env/venv*/
+env/conda*/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- 大容量・実験データ ---
+# bag / video / captures / frames のような生データ・加工データはGitに乗せない
+bag/
+view/              # 現状 bag があるため一旦丸ごと除外
+video/
+captures/
+frames/
+data/              # csv+動画など実験生成物があるため除外
+samples/           # サンプルをGitに入れたいならここは外してOK
+
+# 画像・動画・ログ類
+*.bag
+*.csv
+*.log
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.png
+*.jpg
+*.jpeg
+*.tiff
+
+# --- YOLO / ML 自動生成物 ---
+runs/
+*.pt               # 学習重み(pt)は巨大になりがちなので管理外に
+*.onnx
+*.engine
+
+# --- 外部ツール(再取得できるもの) ---
+OIDv6_ToolKit/

@@ -1,0 +1,20 @@
+name: yolo-env
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.10
+  - pip
+  - mamba                   # Docker 内で高速解決
+  # GPU 対応 PyTorch (cu118: RTX1650 互換)
+  - pytorch==2.3.0
+  - torchvision
+  - torchaudio
+  - cudatoolkit=11.8
+  # Jupyter & 基本ツール
+  - jupyterlab
+  - ipykernel
+  # --- pip section ---
+  - pip:
+      - ultralytics         # YOLOv8
+      - pyrealsense2==2.56.4.9191
