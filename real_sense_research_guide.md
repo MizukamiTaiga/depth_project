@@ -15,11 +15,14 @@
 
 ```
 depth_project/
-├─ bag/                # 録画 *.bag (ground‑truth)
-├─ scripts/            # 公式ユーティリティ (§4)
+├─ src/                # ソースコード (main.py, sensors/, vision/, etc.)
+├─ tests/              # テストコード
+├─ bag/                # 録画 *.bag (ground-truth)
+├─ scripts/            # 旧・公式ユーティリティ (§4)
 ├─ captures/           # PNG / log / csv 一時出力
-├─ venv310/            # Python 3.10 venv (ラップトップPCで使用する仮想環境, 標準使用)
+├─ venv310/            # Python 3.10 venv (ラップトップPCで使用する仮想環境, 標準使用)
 ├─ venv_desktop/       # Python 3.10 venv (DesktopPCで使用する仮想環境)
+├─ map.json            # マップデータ
 └─ requirements.txt    # 固定バージョン (§2)
 ```
 

@@ -116,3 +116,14 @@ python main.py downloader \
 - NVIDIA Container Toolkit https://docs.nvidia.com/datacenter/cloud-native/
 
 † DSP切替：amixer -c <card#> sset 'Beamforming' off など HID/ALSA コマンドでオンボード処理を無効化可能。
+
+## 12. 現在の実装状況 (2025-11)
+`src/` ディレクトリ配下に、モジュール化されたナビゲーションシステムを実装済み。
+- **言語**: Python 3.10
+- **構成**:
+  - `src/main.py`: メイン実行スクリプト
+  - `src/sensors/`: RealSense (Align対応), ReSpeakerドライバ
+  - `src/vision/`: YOLOv8 + Depth ランドマーク検出
+  - `src/map/`: JSONマップ管理
+  - `src/navigation/`: 自己位置推定
+- **実行**: `python src/main.py --map map.json`

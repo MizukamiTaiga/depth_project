@@ -1,24 +1,19 @@
 depth_project/
-├─ src/                    # 自作コード（まだ無いなら作る）
-├─ notebooks/              # Jupyterがあるなら
-├─ assets/
-│   ├─ raw/                # 生データ置き場
-│   │   ├─ bag/            # bag をここへ
-│   │   ├─ video/          # 生動画
-│   │   └─ captures/       # 生画像
-│   ├─ processed/          # 切り出し/変換後
-│   │   └─ frames/         # 動画→フレームなど
-│   └─ samples/            # 小さめ共有サンプル
-├─ datasets/               # 学習用の正式データ
-│   └─ data/               # いまの data をここへ
-├─ models/
-│   ├─ pretrained/         # ベースモデル yolo8n.pt
-│   └─ trained/            # 学習済み重みの保管場所
-├─ runs/                   # YOLO自動生成ログ（現状維持）
-├─ tools/
-│   └─ OIDv6_ToolKit/      # 外部ツール
-├─ env/                    # 環境まわりを集約
-│   ├─ requirements.txt
-│   └─ environment.yml
-├─ .gitignore
-└─ README.md
+├─ src/                    # ソースコード
+│   ├─ main.py             # メイン実行ファイル
+│   ├─ sensors/            # センサドライバ (RealSense, ReSpeaker)
+│   ├─ vision/             # 画像処理 (YOLOv8 + Depth)
+│   ├─ audio/              # 音響処理
+│   ├─ map/                # マップ管理
+│   ├─ navigation/         # ナビゲーションロジック
+│   └─ utils/              # ユーティリティ
+├─ tests/                  # テストコード
+├─ assets/                 # データ格納
+│   ├─ bag/                # 録画データ (.bag)
+│   └─ ...
+├─ models/                 # モデル格納
+│   └─ yolov8n.pt          # YOLOモデル
+├─ map.json                # マップデータ
+├─ readme.txt              # 簡易説明書
+├─ requirements.txt        # 依存ライブラリ
+└─ real_sense_research_guide.md # 研究ガイドライン
