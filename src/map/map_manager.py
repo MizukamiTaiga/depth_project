@@ -62,4 +62,4 @@ class MapManager:
                 min_dist = dist
                 nearest = lm
                 
-        return nearest, min_dist 
+        return nearest, min_dist
