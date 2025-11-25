@@ -1,3 +1,0 @@
-- yolo-env → 学習・推論・RealSense解析
-- oid-env → Open Images データ収集用
-- 各環境更新後は export すること
